@@ -1,30 +1,41 @@
 # Gestor de Tareas en Azure con Flask
 
-Este proyecto implementa una aplicación web simple para gestionar tareas, diseñada para ser desplegada en Azure App Service con conexión a una base de datos SQL de Azure.
+Aplicación web simple para gestionar tareas mediante operaciones CRUD. Fue desarrollada con Flask y desplegada en Azure App Service, conectada a una base de datos Azure SQL Database.
 
-## 💻 Requisitos
+## Descripción
 
-- Python 3.8 o superior
-- Cuenta de Azure for Students
-- Azure SQL Database creada y accesible
-- Variables de entorno configuradas en App Service:
-  - SQL_SERVER
-  - SQL_DATABASE
-  - SQL_USERNAME
-  - SQL_PASSWORD
+La aplicación permite agregar, visualizar, marcar como completadas y eliminar tareas. El propósito del proyecto es demostrar el despliegue de una aplicación web en la nube usando servicios de Azure for Students.
 
-## 🚀 Cómo ejecutar localmente
+## Tecnologías utilizadas
 
-1. Clona el repositorio.
-2. Crea un entorno virtual (opcional): `python -m venv venv`
-3. Actívalo y luego instala dependencias: `pip install -r requirements.txt`
-4. Configura tus variables de entorno en tu máquina.
-5. Ejecuta: `python app.py`
-6. Accede a `http://127.0.0.1:5000`
+- Python
+- Flask
+- HTML/CSS
+- Azure App Service
+- Azure SQL Database
+- GitHub
 
-## 📦 Despliegue en Azure
+## Servicios de Azure utilizados
 
-Sigue las instrucciones del curso para desplegar en Azure App Service y enlazar la base de datos.
+| Servicio | Propósito |
+|---|---|
+| Azure App Service | Alojamiento de la aplicación web |
+| Azure SQL Database | Almacenamiento de las tareas |
+| Resource Group | Organización de los recursos del proyecto |
 
-## 🧠 Créditos
-Desarrollado como plantilla de proyecto para el curso de Cloud Computing – Prof. Javier A. Dastas
+## Variables de entorno
+
+La aplicación usa las siguientes variables:
+
+- SQL_SERVER
+- SQL_DATABASE
+- SQL_USERNAME
+- SQL_PASSWORD
+
+## Cómo ejecutar localmente
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+python app.py
